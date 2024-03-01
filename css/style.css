@@ -7,34 +7,43 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: #f1f1f1;
-    padding: 10px 20px;
-}
-
-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Adjust padding as needed */
+    background-color: #ffffff; /* Example background color */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
+nav ul li {
+    margin-left: 20px; /* Adjust spacing between menu items */
 }
 
-nav a {
+nav ul li:first-child {
+    margin-left: 0; /* Remove margin for the first item */
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #3a3a3a; /* Text color */
 }
 
-nav a:hover {
-    color: #000;
+nav ul li a:hover {
+    color: #ccc; /* Text color on hover */
 }
+
+.logo {
+    margin-left: auto; /* Push logo to the right */
+    width: 80px;
+}
+
 
 /* Hero Section */
 .hero {
@@ -221,11 +230,13 @@ nav a:hover {
 .newsletter h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
+    color: white;
 }
 
 .newsletter p {
     font-size: 1em;
     margin-bottom: 20px;
+    color: white;
 }
 
 .newsletter .text-content {
@@ -258,19 +269,106 @@ nav a:hover {
     background-color: #222;
 }
 
-
-
-
-
-
-
 /* Footer */
-footer {
+.footer{
+    background:#432201;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+
+
+    /* CONTACT FORM */
+
+    /* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section {
+    padding: 50px;
     background-color: #f1f1f1;
-    padding: 10px 20px;
     text-align: center;
 }
 
-footer p {
+.contact-section h2, .contact-info h3 {
+    margin: 10px 0;
+}
+.contact-info {
+    margin-top: 10rem;
+}
+
+.contact-info, .contact-form {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
+
+.contact-info li {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    
+
+    
